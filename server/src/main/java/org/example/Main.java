@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.example.out.Operations;
 import org.example.services.Service;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+@SpringBootApplication
 public class Main {
     private final static Logger log = LogManager.getLogger();
     private static Properties props;
