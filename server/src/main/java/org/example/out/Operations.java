@@ -155,5 +155,22 @@ public class Operations {
         responseMessage.put("result", result);
         String jsonMessage = responseMessage.toString();
         client.send(jsonMessage);
+        if(!result)return;
+        client.setUserName(userName);
+        Thread.sleep(1000);
+        sendUserName(client);
+    }
+
+    private void sendUserName(Client client){
+
+        try {
+            ObjectNode responseMessage = JsonNodeFactory.instance.objectNode();
+            responseMessage.put("type", "userName");
+            responseMessage.put("content", client.getUserName());
+            client.send(responseMessage.toString());
+            Logger.info("sended userName to client ->> " + client.getUserName());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

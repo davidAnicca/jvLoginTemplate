@@ -7,6 +7,7 @@ module com.example.client {
     requires org.json;
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
+    requires java.desktop;
 
 
     opens com.example.client to javafx.fxml;

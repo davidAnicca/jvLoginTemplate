@@ -29,7 +29,7 @@ public class LoginController {
         String userName = userNameText.getText();
         String passwd = passwdText.getText();
         if (service.checkUser(userName, passwd)) {
-            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("main-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("/main-view.fxml"));
             AnchorPane root = loader.load(); ///aici e eroarea
             Scene scene = new Scene(root, root.getPrefWidth(), root.getPrefHeight());
             Stage stage = new Stage();

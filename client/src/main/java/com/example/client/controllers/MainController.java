@@ -1,23 +1,22 @@
 package com.example.client.controllers;
 
+import com.example.client.controllers.content.Content;
 import com.example.client.services.Service;
-import javafx.collections.FXCollections;
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
-import java.util.List;
 
 public class MainController {
 
 
     public ListView<String> someList;
+    public Label userLabel;
+
+    private Thread listenThread;
 
     private Service service;
 
@@ -29,7 +28,16 @@ public class MainController {
     }
 
     private void init() throws Exception {
+            listenThread = new Thread(()->{
+                while (true) {
+                    Content content = service.listen();
+                    Platform.runLater(() -> {
+                        content.show(this);
+                    });
 
+                }
+            });
+            listenThread.start();
     }
 
     public void startGame(ActionEvent event) {

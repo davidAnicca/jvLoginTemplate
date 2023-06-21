@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.example.client.controllers.content.*;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -72,4 +73,15 @@ public class Operations {
         }
     }
 
+    public Content get(){
+        Logger.debug("Waiting... -> ");
+        try{
+            String response = server.receive();
+            Logger.debug("Response -> " + response);
+            JSONObject json = new JSONObject(response);
+            return ContentFactory.createShowable(json);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

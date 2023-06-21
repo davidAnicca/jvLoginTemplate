@@ -1,5 +1,6 @@
 package com.example.client.services;
 
+import com.example.client.controllers.content.Content;
 import com.example.client.out.Operations;
 
 import java.io.IOException;
@@ -16,4 +17,7 @@ public class Service {
         return server.checkUser(userName, passwd);
     }
 
+    public Content listen() {
+        return server.get();
+    }
 }

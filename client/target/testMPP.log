@@ -1,0 +1,38 @@
+21 Jun 2023 04:12:36,359 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:12:55,035 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:12:56,200 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:12:59,059 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:13:19,561 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:13:20,889 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:13:24,654 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:15:49,955 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:15:51,025 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:15:53,249 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:16:38,497 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:16:39,520 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:16:42,101 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:16:42,387 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:16:43,111 DEBUG com.example.client.out.Operations 80 get - Response -> {"type":"userName","content":"a"}
+21 Jun 2023 04:16:43,113 FATAL com.example.client.controllers.content.ContentFactory 10 createShowable - {"type":"userName","content":"a"}
+21 Jun 2023 04:16:43,116 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:18:17,470 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:18:18,567 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:18:24,132 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:18:24,198 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:18:25,135 DEBUG com.example.client.out.Operations 80 get - Response -> {"type":"userName","content":"a"}
+21 Jun 2023 04:18:25,136 FATAL com.example.client.controllers.content.ContentFactory 10 createShowable - {"type":"userName","content":"a"}
+21 Jun 2023 04:18:25,137 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:18:58,185 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:18:59,167 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:19:02,036 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:19:02,163 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:19:03,039 DEBUG com.example.client.out.Operations 80 get - Response -> {"type":"userName","content":"a"}
+21 Jun 2023 04:19:03,040 FATAL com.example.client.controllers.content.ContentFactory 10 createShowable - {"type":"userName","content":"a"}
+21 Jun 2023 04:19:03,043 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:19:39,225 FATAL com.example.client.HelloApplication 18 start - start
+21 Jun 2023 04:19:40,225 INFO  com.example.client.out.Operations 29 start - Connecting to server...
+21 Jun 2023 04:19:45,487 INFO  com.example.client.out.Operations 43 checkUser - Check user response: {"command":"checkUser","result":true}
+21 Jun 2023 04:19:45,630 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
+21 Jun 2023 04:19:46,501 DEBUG com.example.client.out.Operations 80 get - Response -> {"type":"userName","content":"a"}
+21 Jun 2023 04:19:46,503 FATAL com.example.client.controllers.content.ContentFactory 10 createShowable - {"type":"userName","content":"a"}
+21 Jun 2023 04:19:46,504 DEBUG com.example.client.out.Operations 77 get - Waiting... -> 
